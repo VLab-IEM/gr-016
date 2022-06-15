@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Identifier</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-display-code"> ᴠᴀʟɪᴅᴀᴛᴇ ɪᴅᴇɴᴛɪꜰɪᴇʀ </i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link mx-4" id="shanti" href="#abhi1">Aim <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mx-4" id="shanti" href="#abhi2">Theory</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mx-4" id="shanti" href="#abhi3">Input/output Examples</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mx-4" id="shanti" href="#abhi4">Online Simulator</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mx-4" id="shanti" href="#abhi5">Discussion</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link mx-4" id="shanti" href="#abhi6">Source of Error & Error Recovery</a>
+              </li>
+            
+          </ul>
+        </div>
+      </nav>  
+
+
+
+
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi1">Aim:- </h1>
+        <p class="lead">To design an online simulator that checks whether a user input string (program snippet) is a valid or invalid identifier.</code>.</p>
+      </div>
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi2">Theory:- </h1>
+        <p class="lead">Given a string as user input, representing a program snippet, the task is to check if the string is a valid identifier or not. In order to qualify as a valid identifier, the string must satisfy all the following conditions:</code>.</p>
+        <ul class="lead">
+            <li>It must start with either underscore (_) or any of the characters from the ranges ['a', 'z'] and ['A', 'Z']</li>
+            <li>There must not be any white space in the string</li>
+            <li>All the subsequent characters after the first character must not consist of any special characters like $, #, % etc</li>
+            <li>The string must not exceed 31 characters</li>
+        </ul>
+        <p class="lead">Traverse the string character by character and check whether all the requirements are met for it to be a valid identifier i.e., first character can only be either ‘_’ or an English alphabet and the rest of the characters must neither be a white space or any special character nor must exceed 31 characters.</p>
+
+      </div>
+
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi3">Input/Output Examples:- </h1>
+        <ul class="lead">
+                                <li>
+                                    <p class="lead">Input: Enter String = "Compiler_Design_Project"</p>
+                                    <p class="lead">Output: Valid Identifier</p>
+                                </li>
+                                <li>
+                                    <p class="lead">Input: Enter String = "03_Compiler_Design_Project_Simulator"</p>
+                                    <p class="lead">Output: Invalid Identifier</p>
+                                </li>
+                            </ul>
+      </div>
+
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi4">Online Simulator:- </h1>
+        
+        <p class="lead">Click on this <a href="https://id-or-not-iem.netlify.app/">Link</a> to go to the Online Simulator.</p>
+      </div>
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi5">Discussion:- </h1>
+        <p class="lead">We wrote the online simulator using C programming language and integrated it with the website designed using HTML, CSS, JavaScript. The simulator takes a string as user input and checks whether it is a valid or invalid identifier.</code>.</p>
+
+      </div>
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi6">Source of Error & Error Recovery:- </h1>
+        <p class="lead">There can be two possible sources of error for this string in the program snippet:</p>
+        <ul class="lead">
+            <li>
+                Having an illegal character in a string. It can be of two types:
+                <ul>
+                    <li>If the start of the string is neither a letter (in upper or lower case) nor an underscore symbol (_).</li>
+                    <li>If there is(are) illegal special characters like $, #, @ symbols present within the string.</li>
+                </ul>
+            </li>
+            <li>
+                String exceeding 31 Characters:
+                <p>Sometimes the user input string can be a long one, particularly exceeding 31characters in length. In those cases, the string, although having all required syntax, will be considered as an invalid identifier.
+                    Example: AbhishekA_SwapnamoyD_JayPrakashP
+                    </p>
+            </li>
+        </ul>
+        <p class="lead">Although there are some of error recovery methods that are automatically performed by the compiler, it is not recommended as it may lead to problems in other parts of code if those are not changed accordingly.
+            These are four methods by which an invalid identifier is turned into a valid one by the compiler
+        </p>
+        <ul class="lead">
+            <li>
+                Delete: This method deletes extra illegal characters from the string.
+            </li>
+            <li>
+                Insert: This method is used only when there is digit(s) present at the start of the input string. Inserting character (namely L/_) at the of the string can make it a valid identifier.
+            </li>
+            <li>
+                Transpose: This method works only when there is a single digit present at the start of the string followed by a letter or underscore. Transposing or interchanging two adjacent characters at the first and second places make the string a valid identifier.
+            </li>
+            <li>
+                Replace: This method works by changing the illegal characters to a letter or digit or underscore making the string a valid identifier.
+            </li>
+        </ul>
+      </div>
+</body>
+</html>

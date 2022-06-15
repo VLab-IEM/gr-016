@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parse tree generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-display-code"> ᴘᴀʀꜱᴇ ᴛʀᴇᴇ </i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link mx-4" id="shanti" href="#abhi1">Aim <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mx-4" id="shanti" href="#abhi2">Theory</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mx-4" id="shanti" href="#abhi3">Input/output Examples</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mx-4" id="shanti" href="#abhi4">Online Simulator</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mx-4" id="shanti" href="#abhi5">Discussion</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link mx-4" id="shanti" href="#abhi6">Source of Error & Error Recovery</a>
+              </li>
+            
+          </ul>
+        </div>
+      </nav>  
+
+
+
+
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi1">Aim:- </h1>
+        <p class="lead">To design an online simulator that implements a  Parser for the given grammar</code>.</p>
+      </div>
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi2">Theory:- </h1>
+        <p class="lead">A parser generator is a good tool that you should make part of your toolbox. A parser generator takes a grammar as input and automatically generates source code that can parse streams of characters using the grammar</code>.</p>
+        <p class="lead">The generated code is a parser, which takes a sequence of characters and tries to match the sequence against the grammar. The parser typically produces a parse tree, which shows how grammar productions are expanded into a sentence that matches the character sequence. The root of the parse tree is the starting nonterminal of the grammar. Each node of the parse tree expands into one production of the grammar. We’ll see how a parse tree actually looks in the next section.</p>
+        <p class="lead">The final step of parsing is to do something useful with this parse tree. We are going to translate it into a value of a recursive data type. Recursive abstract data types are often used to represent an expression in a language, like HTML, or Markdown, or Java, or algebraic expressions. A recursive abstract data type that represents a language expression is called an abstract syntax tree (AST).</p>
+      </div>
+
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi3">Input/Output Examples:- </h1>
+        <p class="lead">Let us take an example of a Grammar (Production Rules)</code>.</p>
+        <p>S -> sAB</p>
+        <p>A -> a</p>
+        <p>B -> b</p>
+        <p class="lead">The input string is “sab”, then the Parse Tree is :</p>
+        <br>
+        <img src="parsetree1.png" alt="">
+      </div>
+
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi4">Online Simulator:- </h1>
+        
+        <p class="lead">Click on this <a href="https://parser-iem.netlify.app/">Link</a> to go to the Online Simulator.</p>
+      </div>
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi5">Discussion:- </h1>
+        <p class="lead">We wrote the online simulator using C programming language and integrated it with the website designed using HTML, CSS, JavaScript. The simulator takes a Grammar(Production  Rules) as user input and generate the corresponding parse trees according to the grammar/ production rules</code>.</p>
+      </div>
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi6">Source of Error & Error Recovery:- </h1>
+        <p class="lead">By default, Antlr parsers print errors to the console. In order to make the parser modular, however, we need to handle those errors differently. You can attach an ErrorListener to the lexer and parser in order to throw an exception when an error is encountered during parsing. The Sum.g4 file defines a method reportErrorsAsExceptions() which does this. So if you copy the technique used in this grammar file, you can call:</code></p>
+        <p>lexer.reportErrorsAsExceptions();</p>
+        <p>parser.reportErrorsAsExceptions();</p>
+        <p class="lead">right after you create the lexer and parser. Then when you call parser.root(), it will throw an exception as soon as it encounters something that it can’t match.</p>
+      </div>
+</body>
+</html>

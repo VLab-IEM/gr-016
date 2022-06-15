@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left right Derivation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-display-code"> ʟᴇꜰᴛ-ʀɪɢʜᴛ ᴅᴇʀɪᴠᴀᴛɪᴏɴ </i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link mx-4" id="shanti" href="#abhi1">Aim <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mx-4" id="shanti" href="#abhi2">Theory</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mx-4" id="shanti" href="#abhi3">Input/output Examples</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mx-4" id="shanti" href="#abhi4">Online Simulator</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mx-4" id="shanti" href="#abhi5">Discussion</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link mx-4" id="shanti" href="#abhi6">Source of Error & Error Recovery</a>
+              </li>
+            
+          </ul>
+        </div>
+      </nav>  
+
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi1">Aim:- </h1>
+        <p class="lead">To design an online simulator to derive leftmost derivation tree and rightmost derivation tree from a given grammar for a goal string</code>.</p>
+        
+      </div>
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi2">Theory:- </h1>
+        <p class="lead">The process of deriving a string is called as derivation. The geometrical representation of a derivation is called as a parse tree or derivation tree</code>.</p>
+        <p class="lead">Properties Of Parse Tree-</p>
+        <ul class="lead">
+          <li>
+              <p class="lead">Root node of a parse tree is the start symbol of the grammar.</p>
+          </li>
+          <li>
+              <p class="lead">Each leaf node of a parse tree represents a terminal symbol.</p>
+          </li>
+          <li>
+            <p class="lead">•	Each interior node of a parse tree represents a non-terminal symbol.</p>
+        </li>
+      </ul>
+      <br><br>
+      <img src="parsetree.png" alt="">
+      <br><br><br><br>
+      <ul class="lead">
+        <li>
+            <p class="lead">Leftmost Derivation:</p>
+            <p class="lead">The process of deriving a string by expanding the leftmost non-terminal at each step is called as leftmost derivation.</p>
+        </li>
+        <li>
+            <p class="lead">Rightmost Derivation:</p>
+            <p class="lead">The process of deriving a string by expanding the rightmost non-terminal at each step is called as rightmost derivation</p>
+        </li>
+    </ul>
+
+      </div>
+
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi3">Input/Output Examples:- </h1>
+        <p class="lead">Consider the following Grammer:</code>.</p>
+        <img src="left ex.png" alt="">
+        <br><br><br>
+        <p class="lead">Left Derivation:</p>
+        <img src="left gr.png" alt="">
+        <br><p class="lead">Right Derivation:</p>
+        <img src="right gr.png" alt="">
+      </div>
+
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi4">Online Simulator:- </h1>
+        
+        <p class="lead">Click on this <a href="https://left-right-derivation.netlify.app/">Link</a> to go to the Online Simulator.</p>
+      </div>
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi5">Discussion:- </h1>
+        <p class="lead">We wrote the online simulator using HTML, CSS, JavaScript and successfully implemented the concept of left and right derivation tree</code>.</p>
+      </div>
+
+      <div class="container">
+        <h1 class="mt-5" id="abhi6">Source of Error & Error Recovery:- </h1>
+        <p class="lead">If the grammar is ambiguous i.e., if there exist more than one left or right derivations for the same string.
+          For an ambiguous grammar left and right derivation tree of a given grammar may yield different results.  
+          </code>.</p>
+      </div>
+
+
+      
+</body>
+</html>

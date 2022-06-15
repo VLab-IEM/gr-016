@@ -1,0 +1,12 @@
+#footer {
+    position:relative;
+    bottom:0;
+    width:100%;
+    background:#6cf;
+    text-align:match-parent;
+    background: #FFF;
+}
+
+#inp {
+    border-color: black;
+}
